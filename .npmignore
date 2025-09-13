@@ -1,0 +1,69 @@
+# Source files (keep only compiled output)
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development files
+example.*
+*.test.ts
+*.spec.ts
+
+# Build artifacts
+*.tsbuildinfo
+
+# Development dependencies
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env*
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
+
+# Documentation (keep README.md and LICENSE)
+docs/
+QUICKSTART.md
+
+# Deployment files
+deploy/
+deployment/
+deploy.sh
+deploy.bat
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Cache directories
+.cache/
+.parcel-cache/
+.rpt2_cache/
+.rts2_cache_*/
+
+# Package files
+*.tgz
+package-lock.json

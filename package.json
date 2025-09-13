@@ -1,0 +1,45 @@
+{
+  "name": "ghread",
+  "version": "0.0.1",
+  "description": "Generate beautiful GitHub README profiles instantly with a simple command",
+  "main": "dist/index.js",
+  "bin": {
+    "ghread": "./dist/bin/ghread.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/bin/ghread.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "github",
+    "readme",
+    "profile",
+    "generator",
+    "cli",
+    "typescript"
+  ],
+  "author": "Tony Cletus",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/inquirer": "^9.0.7",
+    "tsup": "^8.5.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonycletus/ghread.git"
+  },
+  "homepage": "https://github.com/tonycletus/ghread#readme"
+}
