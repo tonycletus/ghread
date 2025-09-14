@@ -11,13 +11,13 @@ import { GhreadConfig, InquirerAnswers, GenerateOptions, Theme } from '../types'
 program
   .name('ghread')
   .description('Generate beautiful GitHub README profiles instantly')
-  .version('0.0.1');
+  .version('0.1.0');
 
 program
   .command('init')
   .description('Initialize a new README with interactive setup')
   .action(async () => {
-    console.log(chalk.blue.bold('\n🚀 Welcome to ghread! Let\'s create your GitHub profile\n'));
+    console.log(chalk.blue.bold('\nWelcome to ghread! Let\'s create your GitHub profile\n'));
     
     const answers: InquirerAnswers = await inquirer.prompt([
       {
@@ -42,7 +42,7 @@ program
         type: 'input',
         name: 'bio',
         message: 'Write a short bio about yourself:',
-        default: 'Passionate developer building amazing things'
+        default: 'Passionate developer building innovative solutions'
       },
       {
         type: 'input',
@@ -69,6 +69,36 @@ program
         default: ''
       },
       {
+        type: 'input',
+        name: 'github',
+        message: 'Your GitHub username (for additional GitHub badge):',
+        default: ''
+      },
+      {
+        type: 'input',
+        name: 'stackoverflow',
+        message: 'Your Stack Overflow user ID:',
+        default: ''
+      },
+      {
+        type: 'checkbox',
+        name: 'sections',
+        message: 'Which sections would you like to include?',
+        choices: [
+          { name: 'About Me', value: 'aboutMe', checked: true },
+          { name: 'GitHub Analytics', value: 'githubStats', checked: true },
+          { name: 'Top Languages', value: 'topLanguages', checked: true },
+          { name: 'GitHub Streak', value: 'streak', checked: true },
+          { name: 'Contribution Heatmap', value: 'contributionGraph', checked: true },
+          { name: 'Achievement Gallery', value: 'achievementGallery', checked: false },
+          { name: 'Tech & Tools', value: 'techTools', checked: false },
+          { name: 'Latest Articles', value: 'blogArticles', checked: false },
+          { name: 'Featured Projects', value: 'featuredProjects', checked: false },
+          { name: 'Fun & Inspiration', value: 'funSections', checked: false },
+          { name: 'Real-Time Stats', value: 'realTimeStats', checked: false }
+        ]
+      },
+      {
         type: 'list',
         name: 'theme',
         message: 'Choose a theme:',
@@ -85,6 +115,21 @@ program
     ]);
 
     try {
+      // Convert checkbox selections to boolean object
+      const sectionsConfig = {
+        aboutMe: answers.sections.includes('aboutMe'),
+        githubStats: answers.sections.includes('githubStats'),
+        topLanguages: answers.sections.includes('topLanguages'),
+        streak: answers.sections.includes('streak'),
+        contributionGraph: answers.sections.includes('contributionGraph'),
+        achievementGallery: answers.sections.includes('achievementGallery'),
+        techTools: answers.sections.includes('techTools'),
+        blogArticles: answers.sections.includes('blogArticles'),
+        featuredProjects: answers.sections.includes('featuredProjects'),
+        funSections: answers.sections.includes('funSections'),
+        realTimeStats: answers.sections.includes('realTimeStats')
+      };
+
       const config: GhreadConfig = {
         name: answers.name,
         username: answers.username,
@@ -94,17 +139,20 @@ program
         linkedin: answers.linkedin || undefined,
         email: answers.email || undefined,
         website: answers.website || undefined,
-        theme: answers.theme
+        github: answers.github || undefined,
+        stackoverflow: answers.stackoverflow || undefined,
+        theme: answers.theme,
+        sections: sectionsConfig
       };
 
       await generateReadme(config);
-      console.log(chalk.green.bold('\n✅ README.md generated successfully!'));
-      console.log(chalk.yellow('\n📝 Next steps:'));
+      console.log(chalk.green.bold('\nREADME.md generated successfully!'));
+      console.log(chalk.yellow('\nNext steps:'));
       console.log('1. Review your README.md file');
       console.log('2. Commit and push to your GitHub profile repository');
       console.log(`3. Your profile will be live at github.com/${answers.username}`);
     } catch (error) {
-      console.error(chalk.red.bold('\n❌ Error generating README:'), (error as Error).message);
+      console.error(chalk.red.bold('\nError generating README:'), (error as Error).message);
     }
   });
 
@@ -125,7 +173,7 @@ program
       await generateReadme(config);
       console.log(chalk.green.bold('\n✅ README.md generated from config!'));
     } catch (error) {
-      console.error(chalk.red.bold('\n❌ Error generating README:'), (error as Error).message);
+      console.error(chalk.red.bold('\nError generating README:'), (error as Error).message);
     }
   });
 

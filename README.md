@@ -126,12 +126,16 @@ await generateReadme(config);
 
 ## Features
 
-- **Beautiful Templates**: Professional GitHub profile layouts
-- **Multiple Themes**: Choose from 6+ color themes
-- **Easy Customization**: Simple placeholder system
-- **Responsive**: Works great on all devices
-- **Auto-updating Stats**: GitHub stats that update automatically
-- **Activity Graphs**: Visual contribution graphs
+- **Comprehensive Templates**: Professional GitHub profile layouts with advanced sections
+- **Multiple Themes**: Choose from 6+ color themes (tokyonight, dark, radical, etc.)
+- **Modular Sections**: Choose which sections to include (11 different sections available)
+- **Advanced Analytics**: GitHub stats, contribution graphs, achievement gallery
+- **Tech Stack Showcase**: Professional tech badges and tools display
+- **Blog Integration**: Latest articles and blog posts section
+- **Featured Projects**: Highlight your best projects with GitHub stats
+- **Fun Elements**: Developer quotes and jokes for personality
+- **Real-time Stats**: Profile views, followers, and stars tracking
+- **Auto-updating Content**: All stats update automatically
 - **Fast Build**: Powered by [tsup](https://www.npmjs.com/package/tsup) and esbuild
 - **TypeScript**: Full type safety and modern development experience
 
@@ -144,12 +148,21 @@ await generateReadme(config);
 - `gruvbox`
 - `dracula`
 
-## Generated Files
+## Available Sections
 
-After running `ghread init`, you'll get:
+Choose from 11 different sections to customize your profile:
 
-- `README.md` - Your GitHub profile
-- `ghread.config.json` - Your configuration for future updates
+- **About Me** - Personal introduction and bio
+- **GitHub Analytics** - Stats and top languages
+- **GitHub Streak** - Contribution streak display
+- **Contribution Heatmap** - Visual activity graph
+- **Achievement Gallery** - GitHub profile trophies
+- **Tech & Tools** - Technology stack badges
+- **Latest Articles** - Blog posts and articles
+- **Featured Projects** - Highlighted repositories
+- **Fun & Inspiration** - Developer quotes and jokes
+- **Real-Time Stats** - Profile views and followers
+- **Custom Sections** - Add your own sections
 
 ## Configuration
 
@@ -160,12 +173,27 @@ Your `ghread.config.json` looks like this:
   "name": "Tony Cletus",
   "username": "tonycletus",
   "title": "Full Stack Developer",
-  "bio": "Passionate developer building amazing things",
+  "bio": "Passionate developer building innovative solutions",
   "twitter": "iamtonycletus",
   "linkedin": "tonycletus",
   "email": "hello@tonycletus.com",
   "website": "https://tonycletus.com",
-  "theme": "tokyonight"
+  "github": "tonycletus",
+  "stackoverflow": "123456",
+  "theme": "tokyonight",
+  "sections": {
+    "aboutMe": true,
+    "githubStats": true,
+    "topLanguages": true,
+    "streak": true,
+    "contributionGraph": true,
+    "achievementGallery": false,
+    "techTools": false,
+    "blogArticles": false,
+    "featuredProjects": false,
+    "funSections": false,
+    "realTimeStats": false
+  }
 }
 ```
 

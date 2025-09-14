@@ -7,7 +7,23 @@ export interface GhreadConfig {
   linkedin?: string;
   email?: string;
   website?: string;
+  github?: string;
+  stackoverflow?: string;
   theme: Theme;
+  sections: {
+    aboutMe: boolean;
+    githubStats: boolean;
+    topLanguages: boolean;
+    streak: boolean;
+    contributionGraph: boolean;
+    achievementGallery: boolean;
+    techTools: boolean;
+    blogArticles: boolean;
+    featuredProjects: boolean;
+    funSections: boolean;
+    realTimeStats: boolean;
+  };
+  customSections?: string[];
 }
 
 export type Theme = 
@@ -27,7 +43,10 @@ export interface InquirerAnswers {
   linkedin: string;
   email: string;
   website: string;
+  github: string;
+  stackoverflow: string;
   theme: Theme;
+  sections: string[];
 }
 
 export interface GenerateOptions {

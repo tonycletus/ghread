@@ -1,4 +1,4 @@
-# Quick Start Guide 🚀
+# Quick Start Guide
 
 ## Install & Use ghread in 3 Steps
 
@@ -20,23 +20,32 @@ ghread init
 
 ## What You Get
 
-- ✅ Beautiful GitHub profile README
-- ✅ Auto-updating GitHub stats
-- ✅ Contribution graph
-- ✅ Social media badges
-- ✅ Professional layout
-- ✅ Multiple theme options
+- Beautiful GitHub profile README
+- Auto-updating GitHub stats and analytics
+- Contribution heatmap and streak tracking
+- Achievement gallery with GitHub trophies
+- Professional tech stack badges
+- Blog articles and featured projects sections
+- Fun elements (quotes, jokes)
+- Real-time profile statistics
+- Social media integration
+- Multiple theme options
+- Modular section selection
 
 ## Example Output
 
 Your generated README will include:
-- Personal introduction
-- GitHub statistics (auto-updating)
-- Top languages
-- Contribution streak
-- Activity graph
-- Social media links
-- Professional styling
+- Personal introduction and bio
+- GitHub analytics (stats, top languages, streak)
+- Contribution heatmap
+- Achievement gallery with trophies
+- Tech stack and tools showcase
+- Latest articles and blog posts
+- Featured projects with GitHub stats
+- Fun elements (developer quotes, jokes)
+- Real-time profile statistics
+- Social media integration
+- Professional styling with multiple themes
 
 ## Need Help?
 
