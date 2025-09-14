@@ -1,6 +1,6 @@
 {
   "name": "ghread",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate beautiful GitHub README profiles instantly with npx or CLI. No installation required!",
   "main": "dist/index.js",
   "bin": {
