@@ -1,13 +1,13 @@
-# ghread 📝
+# ghread
 
-> Generate beautiful GitHub README profiles instantly with a simple command
+Generate beautiful GitHub README profiles instantly with a simple command.
 
 [![npm version](https://badge.fury.io/js/ghread.svg)](https://badge.fury.io/js/ghread)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![tsup](https://img.shields.io/badge/bundled%20with-tsup-FF6B6B?logo=esbuild&logoColor=white)](https://tsup.egoist.dev/)
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install globally
@@ -17,15 +17,13 @@ npm install -g ghread
 ghread init
 ```
 
-That's it! Your beautiful GitHub profile README is ready.
-
-## 📖 Examples
+## Examples
 
 ### Interactive Setup
 ```bash
 $ ghread init
 
-🚀 Welcome to ghread! Let's create your GitHub profile
+Welcome to ghread! Let's create your GitHub profile
 
 ? What's your name? Tony Cletus
 ? What's your GitHub username? tonycletus
@@ -37,9 +35,9 @@ $ ghread init
 ? Your website URL: https://tonycletus.com
 ? Choose a theme: Tokyo Night
 
-✅ README.md generated successfully!
+README.md generated successfully!
 
-📝 Next steps:
+Next steps:
 1. Review your README.md file
 2. Commit and push to your GitHub profile repository
 3. Your profile will be live at github.com/tonycletus
@@ -47,31 +45,31 @@ $ ghread init
 
 ### Generated README Preview
 ```markdown
-# Hi there 👋
+# Hi there
 
-**Welcome to my corner of the digital world!** ✨
+**Welcome to my corner of the digital world!**
 
 I'm **Tony Cletus**, and this profile is a glimpse into my journey as a Full Stack Developer.
 
 ---
 
-### 🚀 About Me
-- 🔥 **Passion**: Passionate developer building amazing things
-- 🌱 **Growth**: Lifelong learner, exploring tech and coding every day
-- 👯 **Collaboration**: Open to open-source and research collaborations
-- 💬 **Focus**: Tech, AI, coding, and privacy-aware systems
-- 💎 **Beyond Code**: Traveler, family-oriented, and driven by curiosity
-- 💡 **Fun fact**: I drink Garri, not Coffee 😅
+### About Me
+- **Passion**: Passionate developer building amazing things
+- **Growth**: Lifelong learner, exploring tech and coding every day  
+- **Collaboration**: Open to open-source and research collaborations  
+- **Focus**: Tech, AI, coding, and privacy-aware systems  
+- **Beyond Code**: Traveler, family-oriented, and driven by curiosity  
+- **Fun fact**: I drink Garri, not Coffee  
 
-📫 Connect with me:
-[![Twitter Badge](https://img.shields.io/badge/-@iamtonycletus-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/iamtonycletus)
-[![LinkedIn Badge](https://img.shields.io/badge/-Tony%20Cletus-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tonycletus)
+Connect with me:  
+[![Twitter Badge](https://img.shields.io/badge/-@iamtonycletus-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/iamtonycletus)  
+[![LinkedIn Badge](https://img.shields.io/badge/-Tony%20Cletus-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tonycletus)  
 [![Email Badge](https://img.shields.io/badge/-hello@tonycletus.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:hello@tonycletus.com)
 [![Website Badge](https://img.shields.io/badge/-Website-000000?style=flat&logo=About.me&logoColor=white)](https://tonycletus.com)
 
 ---
 
-### 📊 GitHub Stats (auto-updating)
+### GitHub Stats (auto-updating)
 ![Tony Cletus's GitHub stats](https://github-readme-stats.vercel.app/api?username=tonycletus&show_icons=true&count_private=true&theme=tokyonight)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tonycletus&layout=compact&count_private=true&theme=tokyonight)
@@ -80,15 +78,15 @@ I'm **Tony Cletus**, and this profile is a glimpse into my journey as a Full Sta
 
 ---
 
-### 🖼 Contribution Graph
+### Contribution Graph
 ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=tonycletus&theme=tokyonight&hide_border=false)
 
 ---
 
-✨ *"Let's change the world one code at a time."*
+*"Let's change the world one code at a time."*
 ```
 
-## 📖 Usage
+## Usage
 
 ### Interactive Setup
 ```bash
@@ -126,18 +124,18 @@ const config: GhreadConfig = {
 await generateReadme(config);
 ```
 
-## 🎨 Features
+## Features
 
-- ✨ **Beautiful Templates**: Professional GitHub profile layouts
-- 🎨 **Multiple Themes**: Choose from 6+ color themes
-- 🔧 **Easy Customization**: Simple placeholder system
-- 📱 **Responsive**: Works great on all devices
-- 🚀 **Auto-updating Stats**: GitHub stats that update automatically
-- 📊 **Activity Graphs**: Visual contribution graphs
-- ⚡ **Fast Build**: Powered by [tsup](https://www.npmjs.com/package/tsup) and esbuild
-- 🎯 **TypeScript**: Full type safety and modern development experience
+- **Beautiful Templates**: Professional GitHub profile layouts
+- **Multiple Themes**: Choose from 6+ color themes
+- **Easy Customization**: Simple placeholder system
+- **Responsive**: Works great on all devices
+- **Auto-updating Stats**: GitHub stats that update automatically
+- **Activity Graphs**: Visual contribution graphs
+- **Fast Build**: Powered by [tsup](https://www.npmjs.com/package/tsup) and esbuild
+- **TypeScript**: Full type safety and modern development experience
 
-## 🎯 Themes
+## Themes
 
 - `tokyonight` (default)
 - `dark`
@@ -146,14 +144,14 @@ await generateReadme(config);
 - `gruvbox`
 - `dracula`
 
-## 📁 Generated Files
+## Generated Files
 
 After running `ghread init`, you'll get:
 
-- `README.md` - Your beautiful GitHub profile
+- `README.md` - Your GitHub profile
 - `ghread.config.json` - Your configuration for future updates
 
-## 🔧 Configuration
+## Configuration
 
 Your `ghread.config.json` looks like this:
 
@@ -171,7 +169,7 @@ Your `ghread.config.json` looks like this:
 }
 ```
 
-## 🛠 Development
+## Development
 
 ```bash
 # Clone the repo
@@ -181,7 +179,7 @@ cd ghread
 # Install dependencies
 npm install
 
-# Build with tsup (powered by esbuild) - super fast!
+# Build with tsup (powered by esbuild)
 npm run build
 
 # Link for local development
@@ -191,14 +189,10 @@ npm link
 npm run dev
 ```
 
-## 📄 License
+## License
 
 MIT © [Tony Cletus](https://github.com/tonycletus)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## ⭐ Show Your Support
-
-Give a ⭐️ if this project helped you!
