@@ -1,7 +1,7 @@
 {
   "name": "ghread",
   "version": "0.1.0",
-  "description": "Generate beautiful GitHub README profiles instantly with a simple command",
+  "description": "Generate beautiful GitHub README profiles instantly with npx or CLI. No installation required!",
   "main": "dist/index.js",
   "bin": {
     "ghread": "./dist/bin/ghread.js"

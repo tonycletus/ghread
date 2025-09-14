@@ -1,18 +1,19 @@
 # Quick Start Guide
 
-## Install & Use ghread in 3 Steps
+## Install & Use ghread in 2 Steps
 
-### 1. Install
+### 1. Generate (No Installation Required!)
 ```bash
-npm install -g ghread
+npx ghread init
 ```
 
-### 2. Generate
+**Alternative:** Install globally for repeated use
 ```bash
+npm install -g ghread
 ghread init
 ```
 
-### 3. Deploy
+### 2. Deploy
 ```bash
 # Copy the generated README.md to your GitHub profile repository
 # (usually named after your username, e.g., tonycletus/tonycletus)
@@ -55,4 +56,4 @@ Your generated README will include:
 
 ---
 
-**Ready to create your amazing GitHub profile? Run `ghread init` now!** ✨
+**Ready to create your amazing GitHub profile? Run `npx ghread init` now!** ✨

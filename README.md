@@ -10,10 +10,13 @@ Generate beautiful GitHub README profiles instantly with a simple command.
 ## Quick Start
 
 ```bash
-# Install globally
-npm install -g ghread
+# Generate your README instantly (no installation needed!)
+npx ghread init
+```
 
-# Generate your README interactively
+**Alternative:** Install globally for repeated use
+```bash
+npm install -g ghread
 ghread init
 ```
 
@@ -21,7 +24,7 @@ ghread init
 
 ### Interactive Setup
 ```bash
-$ ghread init
+$ npx ghread init
 
 Welcome to ghread! Let's create your GitHub profile
 
@@ -90,7 +93,7 @@ Connect with me:
 
 ### Interactive Setup
 ```bash
-ghread init
+npx ghread init
 ```
 This will guide you through creating your profile with prompts for:
 - Name and GitHub username
@@ -100,7 +103,7 @@ This will guide you through creating your profile with prompts for:
 
 ### From Config File
 ```bash
-ghread generate
+npx ghread generate
 ```
 Uses your `ghread.config.json` file to generate the README.
 
